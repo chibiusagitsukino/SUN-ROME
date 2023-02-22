@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizza meteo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contatti</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Visualizza il meteo</h1>
+        <p>
+          Scegli un comune per visualizzare il meteo della giornata corrente
+        </p>
+      </section>
+      <section class="content">
+        <div id="messaggio"></div>
+        <form>
+          <label for="comuni"
+            >Seleziona un comune della Provincia di Roma:</label
+          >
+          <select id="comuni">
+            <option value=""></option>
+          </select>
+          <button id="btn-visualizza">Visualizza meteo</button>
+        </form>
+      </section>
+      <div id="meteo"></div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>Copyright © 2023</p>
+        <p>
+          Designed by
+          <a href="https://github.com/chibiusagitsukino">chibiusagitsukino</a>
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="comuni.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
