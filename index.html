@@ -3,38 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visualizza meteo</title>
+    <title>Sun Rome</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="sun-rome"></div>
     <header>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contatti</a></li>
+          <li><img class="logo" src="logo.png" alt="logo" /></li>
+          <li><a class="home" href="#">Home</a></li>
+          <li>
+            <a class="source" href="https://openweathermap.org/">Source</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <h1>Visualizza il meteo</h1>
-        <p>
-          Scegli un comune per visualizzare il meteo della giornata corrente
-        </p>
+        <h1>Weather's Today</h1>
+        <p>Get daily weather updates for the city of Rome and its Provinces</p>
       </section>
       <section class="content">
         <div id="messaggio"></div>
         <form>
-          <label for="comuni"
-            >Seleziona un comune della Provincia di Roma:</label
-          >
+          <label for="comuni">Select a Municipality:</label>
           <select id="comuni">
             <option value=""></option>
           </select>
-          <button type="button" id="btn-visualizza">Visualizza meteo</button>
+          <button type="button" id="btn-visualizza">Weather Forecast</button>
         </form>
+        <div id="meteo"></div>
+        <div id="weather-card"></div>
       </section>
-      <div id="meteo"></div>
     </main>
     <footer>
       <div class="container">

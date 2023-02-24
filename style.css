@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #0f4045;
   color: #fff;
   padding: 20px;
 }
@@ -21,6 +21,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
 }
 
 nav li {
@@ -30,6 +31,10 @@ nav li {
 nav a {
   color: #fff;
   text-decoration: none;
+}
+
+.logo {
+  max-height: 30px;
 }
 
 main {
@@ -44,7 +49,7 @@ main {
   background-position: center;
   color: #fff;
   text-align: center;
-  padding: 80px 0;
+  padding: 150px 0;
 }
 
 .hero h1 {
@@ -60,7 +65,7 @@ main {
 }
 
 form {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 label {
@@ -78,22 +83,27 @@ select {
 }
 
 button {
-  background-color: #333;
+  background-color: #0f4045;
   color: #fff;
   padding: 10px 20px;
+  margin: 10px 0px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 #messaggio {
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 footer {
-  background-color: #f2f2f2;
+  background-color: #dcffff;
   padding: 20px;
   margin-top: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
 }
 
@@ -112,4 +122,57 @@ footer {
 .container a {
   text-decoration: none;
   color: #666;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 750px;
+  max-height: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 25px;
+  margin: 20px 0px;
+}
+
+.icon {
+  font-size: 10vw;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+
+.title {
+  padding: 15px;
+  font-size: 25px;
+  margin-right: 25px;
+  text-align: center;
+  color: #0f4045;
+  border-right: 2px solid #0f4045;
+}
+
+.description {
+  padding: 15px;
+  font-size: 16px;
+  color: #0f4045;
+  font-weight: bold;
+}
+
+.tempMin,
+.tempMax {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #0f4045;
+}
+
+.humidity {
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #0f4045;
 }
