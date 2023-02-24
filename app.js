@@ -4,7 +4,6 @@ import { comuni } from './comuni.js'
 const sunRome = document.querySelector('#sun-rome')
 const selectComuni = document.querySelector('#comuni')
 const messaggio = document.querySelector('#messaggio')
-const meteo = document.querySelector('#meteo')
 const btnVisualizza = document.querySelector('#btn-visualizza')
 const weatherCard = document.querySelector('#weather-card')
 
@@ -33,14 +32,11 @@ btnVisualizza.addEventListener('click', async () => {
     messaggio.textContent = `You Selected ${
       selectComuni.options[selectComuni.selectedIndex].text
     }`
-
-    // messaggio.textContent = `Hai selezionato ${selectComuni.attributes.getNamedItem()}`
   }
 
   // chiamata alla funzione searchCity con il comune selezionato
   try {
     const data = await searchCity(comuneSelezionato)
-    // meteo.textContent = `Il tempo a ${data.name} è ${data.weather[0].description}.`
 
     const weatherCardEl = document.createElement('div')
     weatherCardEl.classList.add('card')

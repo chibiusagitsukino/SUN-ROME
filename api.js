@@ -15,6 +15,3 @@ const searchCity = async (cityName) => {
 }
 
 export { GET, API_KEY, BASE_URL, searchCity }
-
-// // // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-// //'https://api.openweathermap.org/data/2.5/weather?q=rome&appid=41d151b31d0483efd17b907afeee690d'
