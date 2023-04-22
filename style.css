@@ -36,7 +36,15 @@ nav li {
 nav a {
   color: #fff;
   text-decoration: none;
+  
 }
+
+header nav ul li:nth-child(2),
+header nav ul li:nth-child(3) {
+  position: relative;
+  top: 5px;
+}
+
 
 .logo {
   max-height: 30px;
@@ -115,31 +123,37 @@ button:hover {
 
 footer {
   background-color: #dcffff;
-  padding: 20px;
-  margin-top: 50px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+  padding: 20px 0px;
+  
 }
 
 .container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
 }
 
 .container p {
-  display: inline-block;
-  margin: 0 10px;
+  margin: 0;
   font-size: 16px;
   color: #666;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  
 }
 
 .container a {
   text-decoration: none;
   color: #666;
   font-weight: bold;
+  text-align: center;
+  padding: 0;
 }
 
 .card {
@@ -163,7 +177,6 @@ footer {
 .title {
   padding: 15px;
   font-size: 25px;
-  margin-right: 25px;
   text-align: center;
   color: #0f4045;
   border-bottom: 2px solid #0f4045;
@@ -204,5 +217,14 @@ footer {
     margin-right: 0px;
     border-bottom: 0px;
     border-right: 2px solid #0f4045;
+  }
+
+  .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 }
