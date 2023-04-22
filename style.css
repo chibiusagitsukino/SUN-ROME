@@ -54,6 +54,7 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  height: 100%;
 }
 
 .hero {
@@ -124,6 +125,8 @@ button:hover {
 footer {
   background-color: #dcffff;
   padding: 20px 0px;
+  width: 100%;
+  text-align: center;
   
 }
 
