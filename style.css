@@ -53,8 +53,7 @@ header nav ul li:nth-child(3) {
 main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
-  height: 100%;
+  padding: 60px 20px;
 }
 
 .hero {
@@ -210,7 +209,20 @@ footer {
   color: #0f4045;
 }
 
+@media (min-width: 406px) and (max-width: 768px) {
+  main{
+    padding: 100px 20px;
+  }
+}
+
+
 @media (min-width: 768px) {
+
+  main{
+    height: 100vh;
+    padding: 20px;
+  }
+
   .card {
     flex-direction: row;
     justify-content: space-around;
