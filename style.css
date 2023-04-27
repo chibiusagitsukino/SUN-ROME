@@ -67,7 +67,7 @@ left: 0;
 width: 100%;
 height: 100vh;
 z-index: -1;
-filter: saturate(10%);
+/* filter: saturate(10%); */
 
   /* color: #fff; */
   /* text-align: center; */
@@ -75,10 +75,16 @@ filter: saturate(10%);
 }
 
 .textHero {
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 150px auto;
+  max-width: 700px;
   text-align: center;
-  
-  
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 800px;
 }
 
 .textHero h1 {
@@ -95,15 +101,17 @@ filter: saturate(10%);
 }
 
 .content {
+  
   width: 550px;
   position:fixed;
-  left: 50%;
+  /* left: 50%; */
   top: 80px;
-  transform: translate(-50%);
+  /* transform: translate(-50%); */
 }
 
 form {
-  max-width:550px;
+ 
+  /* max-width:550px; */
   margin-top: 200px;
 }
 
@@ -111,9 +119,11 @@ label {
   display: block;
   margin-bottom: 10px;
 color:#fff;
+
 }
 
 select {
+  max-width: 800px;
   display: block;
   width: 100%;
   cursor: pointer;
@@ -209,11 +219,13 @@ footer {
   align-items: center;
   justify-content: center;
   max-width: 800px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
   margin: 50px 0px;
+  border: 1px solid #ccc;
 }
 
 .icon {
@@ -226,7 +238,8 @@ footer {
   font-size: 25px;
   text-align: center;
   color: #0f4045;
-  border-bottom: 2px solid #0f4045;
+  
+  border-right: 2px solid #0f4045;
 }
 
 .description {
@@ -286,8 +299,9 @@ footer {
 
   .title {
     margin-right: 0px;
-    border-bottom: 0px;
-    border-right: 2px solid #0f4045;
+    border-bottom: 2px solid #0f4045;
+    border-right: 0px;
+    padding: 0px;
   }
 
   .container {
@@ -300,8 +314,7 @@ footer {
   }
 
 
-  .icon, .title, .description, .tempMin, .tempMax, .humidity {
-    
+  .icon, .description, .tempMin, .tempMax, .humidity {
     padding: 0px;
   }
   
