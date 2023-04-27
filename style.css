@@ -59,31 +59,58 @@ main {
 .hero {
   background-image: url('https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
+  position: fixed;
+  /* position: relative; */
   background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 150px 0;
+  top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+z-index: -1;
+filter: saturate(10%);
+
+  /* color: #fff; */
+  /* text-align: center; */
+  /* padding: 150px 0; */
 }
 
-.hero h1 {
+.textHero {
+  margin: 150px auto;
+  text-align: center;
+  
+  
+}
+
+.textHero h1 {
+  
   font-size: 3em;
   margin: 0;
   padding: 0;
 }
 
-.hero p {
+.textHero p {
   font-size: 1.2em;
   margin: 0;
   padding: 0;
 }
 
+.content {
+  width: 550px;
+  position:fixed;
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%);
+}
+
 form {
-  margin-top: 20px;
+  max-width:550px;
+  margin-top: 200px;
 }
 
 label {
   display: block;
   margin-bottom: 10px;
+color:#fff;
 }
 
 select {
@@ -117,19 +144,33 @@ button:hover {
   transition: all 300ms ease-in-out;
 }
 
+#weather-card {
+  position: relative;
+}
+
 #messaggio {
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  color: #fff;
+  position: fixed;
+  bottom: -35px;
+  left: 0;
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -300px;
   background-color: #dcffff;
   padding: 20px 0px;
   width: 100%;
   text-align: center;
-  
+ 
 }
 
 .container {
+
   max-width: 1000px;
   margin: 0;
   display: flex;
@@ -158,9 +199,13 @@ footer {
   padding: 0;
 }
 
+
+
+
 .card {
+  position: fixed;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   max-width: 800px;
@@ -209,23 +254,34 @@ footer {
   color: #0f4045;
 }
 
-@media (min-width: 406px) and (max-width: 768px) {
+@media (min-width: 480px) and (min-width: 768px) {
   main{
     padding: 100px 20px;
+    height: 100vh;
   }
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 400px) {
 
   main{
     height: 100vh;
-    padding: 20px;
+    /* padding: 20px; */
+  }
+
+  .content {
+    width: 250px;
+    /* position:fixed;
+    left: 50%;
+    top: 80px;
+    transform: translate(-50%); */
   }
 
   .card {
-    flex-direction: row;
-    justify-content: space-around;
+   flex-direction: column;
+    margin-bottom: 50px;
+    /* height: 500px; */
+
   }
 
   .title {
@@ -242,4 +298,13 @@ footer {
     align-items: center;
     gap: 10px;
   }
+
+
+  .icon, .title, .description, .tempMin, .tempMax, .humidity {
+    
+    padding: 0px;
+  }
+  
+  
+
 }
